@@ -1,0 +1,348 @@
+---
+title: "GitHub without fear"
+subtitle: "(or an Appropriate Amount of Fear!)"
+format: 
+  revealjs:
+      theme: sky
+      slide-number: true
+editor: visual
+---
+
+## Open workflows for ecology and wildlife research
+
+Topics:
+
+- Repositories
+- Commits
+- Push/pull
+- README files
+- Version control basics
+
+## Learning Goals
+
+*By the end of this session you should be able to:*
+
+- Understand what Git and GitHub are
+- Create and clone repositories
+- Make commits confidently
+- Push and pull changes
+
+## What Problem Does Git Solve?
+
+*A familiar workflow problem*
+
+``` text
+analysis_final.R
+analysis_final_v2.R
+analysis_final_v2_REAL.R
+analysis_final_USE_THIS_ONE.R
+```
+
+## Common issues
+
+- Files overwritten
+- Unsure what changed
+- Difficult collaboration
+- No backup history
+- Impossible to undo mistakes safely
+
+## Git is not GitHub
+
+Git
+
+- Version control system
+- Tracks changes to files
+- Works locally on your computer
+
+GitHub
+
+- Online hosting platform for Git repositories
+- Collaboration and sharing
+- Backup and project management
+
+## Version control
+
+Git keeps a history of changes:
+
+- What changed
+- When it changed
+- Who changed it
+- Why it changed
+
+## Benefits
+
+- Undo mistakes
+- Track project history
+- Collaborate safely
+- Experiment without fear
+
+## Why GitHub Matters in Ecology
+
+Ecology is collaborative
+
+Examples:
+
+- Multi-author papers
+- Monitoring projects
+- Shared codebases
+- Long-term projects
+- Student supervision
+- Evidence synthesis workflows
+
+## What Is a Repository?
+
+Repository = project folder + history
+
+A repository contains:
+
+- Code
+- Data (although it shouldn't)
+- Documentation
+- Figures
+- Workflow history
+
+Think of it as:
+
+A project folder with memory.
+
+## Commits
+
+*Commits are snapshots*
+
+A commit records:
+
+- What changed
+- When it changed
+- A short explanation
+
+## Good commit messages
+
+``` text
+Add cleaning script for camera trap data
+```
+
+``` text
+Fix species names in processed dataset
+```
+
+## Bad commit messages
+
+``` text
+stuff
+```
+
+``` text
+asdfgh
+```
+
+## A Helpful Mental Model
+
+``` text
+Edit files
+    ↓
+Review changes
+    ↓
+Commit changes
+    ↓
+Push to GitHub
+```
+
+## Push and Pull
+
+*Push*
+
+Send your local commits to GitHub.
+
+*Pull*
+
+Download changes from GitHub.
+
+## Typical workflow
+
+``` text
+Pull
+Work
+Commit
+Push
+```
+
+------------------------------------------------------------------------
+
+## GitHub is useful for:
+
+- Backup
+- Project sharing
+- Collaboration (even with youself)
+- Public documentation
+- Teaching
+- Open science portfolios
+
+## Common Fear #1
+
+*“What if I break everything?”*
+
+Good news:
+
+Git is designed to:
+
+- Track changes
+- Recover mistakes
+- Restore earlier versions
+
+## Mistakes are normal.
+
+Even experienced users regularly:
+
+- Commit the wrong file
+- Merge incorrectly
+- Forget to pull
+
+## Common Fear #2
+
+“I don’t understand branches”
+
+That is okay.
+
+Branches come later...
+
+You do not need to master Git immediately.
+
+## Common Fear #3
+
+“The terminal is scary”
+
+Yes it is! You can do a lot using:
+
+- RStudio Git pane
+- GitHub Desktop
+- VS Code interfaces
+
+Understanding concepts matters more than memorising commands.
+
+## Common Mistakes
+
+*Common "beginner" mistakes*
+
+- Forgetting to commit
+- Committing large files
+- Editing directly on GitHub accidentally
+- Conflicts after forgetting to pull
+- Uploading sensitive data
+
+## Guided practice
+
+You will:
+
+1.  Create a GitHub repository
+2.  Connect it to RStudio
+3.  Add your reproducible project
+4.  Commit changes
+5.  Push to GitHub
+6.  Edit README
+7.  Pull updates
+
+## Create a GitHub repository
+
+On GitHub:
+
+1.  Click “New repository”
+2.  Choose a repository name
+3.  Add a README
+4.  Set visibility
+5.  Create repository
+
+Suggested name:
+
+``` text
+wildlife-reproducibility-workshop
+```
+
+## "Clone" repository into RStudio
+
+In RStudio:
+
+``` text
+File → New Project → Version Control → Git
+```
+
+Paste repository URL.
+
+## Result
+
+You now have:
+
+- Local repository
+- Git tracking enabled
+- GitHub connection established
+
+## Add project files
+
+Copy into the repository:
+
+- data_raw/
+- scripts/
+- outputs/
+- README.md
+
+## Observe Git pane
+
+RStudio now shows changed files.
+
+## Make your first commit
+
+In Git pane:
+
+1.  Tick changed files
+2.  Click “Commit”
+3.  Write message
+
+Example:
+
+``` text
+Add initial project structure and scripts
+```
+
+## Push to GitHub
+
+Click:
+
+``` text
+Push
+```
+
+## Refresh GitHub page
+
+Your project is now online.
+
+## Edit the README
+
+Add:
+
+- Project description
+- Your name
+- Workshop details
+- Folder explanation
+
+Commit and push changes.
+
+## Important habits
+
+- Always pull before starting work.
+
+- Commit often
+
+## Be careful with:
+
+- Sensitive species locations
+- Confidential data
+- Personal information
+- Large raw files
+- Passwords/API keys
+
+## Useful Links
+
+- [Happy Git with R](https://happygitwithr.com/)
+
+- [Software Carpentry Git lesson](https://swcarpentry.github.io/git-novice/)
+
+- [Oh Shit, Git!?!](https://ohshitgit.com/)

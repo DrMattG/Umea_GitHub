@@ -1,0 +1,65 @@
+---
+title: "Quarto for Transparent Reporting"
+subtitle: "From scripts to reports"
+format: 
+  revealjs:
+      theme: dracula
+      slide-number: true
+editor: visual
+---
+
+## The Problem
+
+```         
+Run analysis 
+↓ 
+Copy figure manually 
+↓ 
+Paste into Word 
+↓ 
+Change analysis 
+↓ 
+Forget to update figure
+```
+
+## What Quarto Does
+
+Quarto combines:
+
+- Narrative text
+
+- R code
+
+- Figures
+
+- Tables
+
+Into one reproducible document.
+
+## A Simple Workflow
+
+```         
+Data 
+↓ 
+Scripts 
+↓ 
+Quarto document 
+↓ 
+HTML / PDF / Word / slides
+```
+
+## What Are Parameters?
+
+Parameterised reports
+
+One report template can generate:
+
+- multiple species reports
+
+- multiple site reports
+
+- multiple years
+
+- multiple regions
+
+Automatically.

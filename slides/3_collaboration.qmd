@@ -1,0 +1,322 @@
+---
+title: "Collaboration Workflows"
+format: 
+  revealjs:
+      theme: league
+      slide-number: true
+editor: visual
+---
+
+## Working together without chaos
+
+Topics:
+
+- Issues
+- Branches
+- Pull requests
+- Project handover
+- Common mistakes
+
+## Collaboration Problems in Ecology
+
+Common collaboration problems
+
+- Overwritten files
+- Conflicting analyses
+- Unclear ownership
+- Missing documentation
+- Lost project knowledge
+- Difficult student handover
+- “Works on my machine” workflows
+
+## What Is an Issue?
+
+Issues = structured project tasks
+
+Examples:
+
+- Fix species names
+- Update occupancy model
+- Add metadata documentation
+- Review extraction decisions
+- Improve README
+
+Issues make work visible.
+
+## Why Issues Matter
+
+Issues help teams:
+
+- Track progress
+- Document decisions
+- Clarify responsibilities
+- Discuss problems transparently
+- Reduce invisible work
+
+## Example issue
+
+``` text
+Issue #14
+Add metadata documentation for camera trap dataset
+```
+
+Possible discussion:
+
+- What needs to be done?
+- Who is responsible?
+- When is it complete?
+
+## Clone vs Fork vs Branch
+
+All three involve “copies” in some way.
+
+But they happen at different levels:
+
+| Concept | Happens where?    | Purpose                       |
+|---------|-------------------|-------------------------------|
+| Clone   | Your computer     | Download repo locally         |
+| Branch  | Inside repository | Safe parallel work            |
+| Fork    | On GitHub         | Your own copy of another repo |
+
+## Cloning a Repository
+
+Clone = download repository locally
+
+You use clone when you want to:
+
+- work on a project
+- run analyses
+- edit files locally
+- connect GitHub to RStudio
+
+Example https://github.com/DrMattG/Open_wildlife_workshop.git
+
+Now the project exists on your computer.
+
+## Visual Clone Diagram
+
+``` text
+GitHub repository
+
+        ↓ clone
+
+Your computer
+
+        ↓
+
+Local editable project
+```
+
+## What Is a Branch?
+
+Branches = safe experimentation
+
+A branch is:
+
+a parallel version inside a repository used for development and testing isolated from the main workflow
+
+## Branch Workflow Diagram
+
+``` text
+main
+ ├── fix-readme
+ ├── occupancy-update
+ └── new-figures
+```
+
+Each branch can evolve independently.
+
+## Why Branches Matter
+
+Branches are useful for:
+
+- Testing new analyses
+- Trying ideas safely
+- Collaborative editing
+- Reviewing changes
+- Protecting stable workflows
+
+## Pull Requests
+
+A pull request means:
+
+> “Please review my changes before merging them.”
+
+PRs support:
+
+- Review
+- Discussion
+- Transparency
+- Quality control
+
+## Pull Request Workflow
+
+``` text
+Create issue
+      ↓
+Create branch
+      ↓
+Make changes
+      ↓
+Commit changes
+      ↓
+Open pull request
+      ↓
+Review + discussion
+      ↓
+Merge into main
+```
+
+## Forking Workflow Example
+
+Example contribution workflow
+
+``` text
+Original repository
+        ↓
+Fork repository
+        ↓
+Clone fork locally
+        ↓
+Create branch
+        ↓
+Make changes
+        ↓
+Push branch
+        ↓
+Open pull request
+```
+
+## When Would You Fork?
+
+Forks are useful when:
+
+- contributing to external projects
+- collaborating across organisations
+- teaching workflows
+- experimenting independently
+- contributing to open-source tools
+
+## Common Fears
+
+“This seems complicated”
+
+Reality:
+
+- Most workflows are small
+- Mistakes are common
+- Nobody learns Git perfectly immediately
+
+The goal is reducing chaos, not perfection.
+
+## Editing directly on main
+
+Problem:
+
+- unstable workflows
+- accidental breakage
+- difficult recovery
+
+Better:
+
+- use branches for changes
+
+## Giant commits
+
+Bad:
+
+``` text
+Update everything
+```
+
+Better:
+
+``` text
+Add occupancy model script
+```
+
+## Small commits are easier to:
+
+- understand
+- review
+- reverse
+
+------------------------------------------------------------------------
+
+## Documentation
+
+Without documentation:
+
+- onboarding becomes difficult
+- workflows become fragile
+- collaborators get lost
+
+README files matter.
+
+## Project knowledge trapped in one person
+
+Danger signs:
+
+- “Only Alex knows how this works”
+- undocumented scripts
+- unclear setup instructions
+- mysterious folders
+
+Good workflows reduce dependency on individuals.
+
+## Project Handover
+
+Projects should survive turnover
+
+- students graduate
+- staff change jobs
+- collaborations evolve
+- projects pause and restart
+
+## Helpful project features
+
+- README
+- clear folder structure
+- setup instructions
+- metadata
+- reproducible scripts
+- documented decisions
+- version control history
+
+## Hands-on Pair Exercise
+
+In pairs:
+
+1.  Create an issue
+2.  Create a branch
+3.  Edit README
+4.  Commit changes
+5.  Open pull request
+6.  Review and merge
+
+## Merge Conflicts
+
+Merge conflicts happen
+
+Conflict means:
+
+Two changes affect the same lines.
+
+## Important
+
+Conflicts are:
+
+- normal
+- solvable
+- not catastrophic
+
+## Collaboration Is Infrastructure
+
+Good workflows help:
+
+- Reduce stress
+- Reduce errors
+- Improve continuity
+- Improve transparency
+- Improve collaboration
+- Improve science
