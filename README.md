@@ -50,16 +50,19 @@ The `slides/` directory contains the complete set of workshop presentations:
 ## Repository structure
 
 ```text
-Open_wildlife_workshop/
-├── slides/                       # Quarto source files for the slides
-│   └── images/                   # Images used in the slide decks
-├── wildlife_report_template.qmd  # Student Quarto exercise
-├── index.qmd                     # Workshop website landing page
-├── _quarto.yml                   # Quarto project configuration
-├── style.css                     # Workshop website styling
-├── Open_wildlife_workshop.Rproj  # RStudio project file
-├── README.md                     # This file
-└── LICENSE                       # Reuse licence
+Umea_GitHub/
+|-- docs/
+|   |-- slides/
+|   |   |-- 1_github_without_fear.html
+|   |   |-- 2_quarto_reports.html
+|   |   `-- 3_collaboration.html
+|-- Exercises/
+|   `-- wildlife_report_template.qmd
+|-- _quarto.yml
+|-- index.qmd
+|-- LICENSE.md
+|-- README.md
+`-- Umea_GitHub.Rproj
 ```
 
 The `docs/` directory contains rendered website files. These are generated

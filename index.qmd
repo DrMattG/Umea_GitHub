@@ -8,9 +8,9 @@
 
 ## Slides
 
-1. [GitHub without fear](slides/1_github_without_fear.html)
-2. [Quarto for transparent reporting](slides/2_quarto_reports.html)
-3. [Collaboration workflows](slides/3_collaboration.html)
+1. [GitHub without fear](https://drmattg.github.io/Umea_GitHub/1_github_without_fear.html)
+2. [Quarto for transparent reporting](https://drmattg.github.io/Umea_GitHub/2_quarto_reports.html)
+3. [Collaboration workflows](https://drmattg.github.io/Umea_GitHub/3_collaboration.html)
 
 ## Exercise
 
