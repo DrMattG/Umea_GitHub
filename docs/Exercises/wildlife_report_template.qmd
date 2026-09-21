@@ -1,0 +1,114 @@
+---
+title: "Wildlife monitoring report"
+subtitle: "GitHub and Quarto workshop"
+author: "Your name"
+date: today
+format:
+  html:
+    toc: true
+    embed-resources: true
+    code-fold: true
+    code-tools: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## About this report
+
+This short report demonstrates how Quarto combines text, R code, results,
+tables and figures in one reproducible document.
+
+::: {.callout-tip}
+## Your first task
+
+Change the author in the YAML header and replace this box with two or three
+sentences about your own research interests.
+:::
+
+## Example data
+
+For this exercise, we will create a small fictional camera-trap dataset. Each
+row represents one monitoring site.
+
+```{r}
+#| label: create-data
+
+observations <- data.frame(
+  site = paste("Site", LETTERS[1:6]),
+  habitat = c("Forest", "Forest", "Wetland", "Grassland", "Wetland", "Forest"),
+  survey_nights = c(10, 12, 8, 10, 9, 11),
+  detections = c(12, 7, 15, 4, 9, 13)
+)
+
+observations$detections_per_night <-
+  observations$detections / observations$survey_nights
+
+observations
+```
+
+## A reproducible result
+
+The survey recorded **`r sum(observations$detections)` detections** across
+**`r sum(observations$survey_nights)` camera-trap nights**. The mean number of
+detections per site was **`r round(mean(observations$detections), 1)`**.
+
+The numbers in that sentence are generated directly from the data. If the data
+change, the sentence will update when the document is rendered again.
+
+## Figure
+
+```{r}
+#| label: detections-figure
+#| fig-cap: "Fictional wildlife detections recorded at six monitoring sites."
+#| fig-alt: "Bar chart comparing the number of wildlife detections across six sites."
+
+barplot(
+  height = observations$detections,
+  names.arg = observations$site,
+  col = "#2F6B4F",
+  border = NA,
+  xlab = "Monitoring site",
+  ylab = "Number of detections"
+)
+```
+
+## Table
+
+```{r}
+#| label: results-table
+
+knitr::kable(
+  observations,
+  digits = 2,
+  caption = "Example camera-trap monitoring data."
+)
+```
+
+## Interpretation
+
+In this fictional example, Site C recorded the largest number of detections.
+However, the sites were not all surveyed for the same number of nights, so a
+comparison of raw detections alone may be misleading.
+
+::: {.callout-note}
+## Your second task
+
+1. Change one of the values in `detections`.
+2. Render the document again and observe what changes.
+3. Add one sentence interpreting `detections_per_night`.
+4. Save the file, inspect the changes in the Git pane and commit them with a
+   meaningful message.
+:::
+
+## Reproducibility information
+
+This report was created with R and Quarto. The following command records the R
+version and packages used to render it.
+
+```{r}
+#| label: session-information
+
+sessionInfo()
+```

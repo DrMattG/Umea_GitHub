@@ -1,0 +1,22 @@
+---
+  title: "GitHub and Quarto for open and reproducible research"
+---
+  
+  # GitHub and Quarto workshop
+  
+  Materials for the Umeå workshop on GitHub, Quarto and collaborative research workflows.
+
+## Slides
+
+1. [GitHub without fear](slides/1_github_without_fear.html)
+2. [Quarto for transparent reporting](slides/2_quarto_reports.html)
+3. [Collaboration workflows](slides/3_collaboration.html)
+
+## Exercise
+
+Download or open the [Quarto wildlife report template](Exercises/wildlife_report_template.qmd).
+
+## Repository
+
+The source materials are available in the  
+[Umea_GitHub GitHub repository](https://github.com/DrMattG/Umea_GitHub).

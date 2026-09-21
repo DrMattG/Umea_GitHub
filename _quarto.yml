@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - "slides/*.qmd"
+  resources:
+    - Exercises/
+
+website:
+  title: "GitHub and Quarto workshop"
+  site-url: "https://drmattg.github.io/Umea_GitHub/"
+  repo-url: "https://github.com/DrMattG/Umea_GitHub"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+    right:
+      - icon: github
+        href: "https://github.com/DrMattG/Umea_GitHub"
+        aria-label: GitHub repository
+  page-footer:
+    left: "GitHub and Quarto for open and reproducible research"
+    right: "Workshop materials licensed under CC BY 4.0"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    link-external-newwindow: true

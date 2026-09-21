@@ -1,0 +1,485 @@
+[
+  {
+    "objectID": "slides/3_collaboration.html#working-together-without-chaos",
+    "href": "slides/3_collaboration.html#working-together-without-chaos",
+    "title": "Collaboration Workflows",
+    "section": "Working together without chaos",
+    "text": "Working together without chaos\nTopics:\n\nIssues\nBranches\nPull requests\nProject handover\nCommon mistakes"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#collaboration-problems-in-ecology",
+    "href": "slides/3_collaboration.html#collaboration-problems-in-ecology",
+    "title": "Collaboration Workflows",
+    "section": "Collaboration Problems in Ecology",
+    "text": "Collaboration Problems in Ecology\nCommon collaboration problems\n\nOverwritten files\nConflicting analyses\nUnclear ownership\nMissing documentation\nLost project knowledge\nDifficult student handover\n“Works on my machine” workflows"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#what-is-an-issue",
+    "href": "slides/3_collaboration.html#what-is-an-issue",
+    "title": "Collaboration Workflows",
+    "section": "What Is an Issue?",
+    "text": "What Is an Issue?\nIssues = structured project tasks\nExamples:\n\nFix species names\nUpdate occupancy model\nAdd metadata documentation\nReview extraction decisions\nImprove README\n\nIssues make work visible."
+  },
+  {
+    "objectID": "slides/3_collaboration.html#why-issues-matter",
+    "href": "slides/3_collaboration.html#why-issues-matter",
+    "title": "Collaboration Workflows",
+    "section": "Why Issues Matter",
+    "text": "Why Issues Matter\nIssues help teams:\n\nTrack progress\nDocument decisions\nClarify responsibilities\nDiscuss problems transparently\nReduce invisible work"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#example-issue",
+    "href": "slides/3_collaboration.html#example-issue",
+    "title": "Collaboration Workflows",
+    "section": "Example issue",
+    "text": "Example issue\nIssue #14\nAdd metadata documentation for camera trap dataset\nPossible discussion:\n\nWhat needs to be done?\nWho is responsible?\nWhen is it complete?"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#clone-vs-fork-vs-branch",
+    "href": "slides/3_collaboration.html#clone-vs-fork-vs-branch",
+    "title": "Collaboration Workflows",
+    "section": "Clone vs Fork vs Branch",
+    "text": "Clone vs Fork vs Branch\nAll three involve “copies” in some way.\nBut they happen at different levels:\n\n\n\nConcept\nHappens where?\nPurpose\n\n\n\n\nClone\nYour computer\nDownload repo locally\n\n\nBranch\nInside repository\nSafe parallel work\n\n\nFork\nOn GitHub\nYour own copy of another repo"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#cloning-a-repository",
+    "href": "slides/3_collaboration.html#cloning-a-repository",
+    "title": "Collaboration Workflows",
+    "section": "Cloning a Repository",
+    "text": "Cloning a Repository\nClone = download repository locally\nYou use clone when you want to:\n\nwork on a project\nrun analyses\nedit files locally\nconnect GitHub to RStudio\n\nExample https://github.com/DrMattG/Open_wildlife_workshop.git\nNow the project exists on your computer."
+  },
+  {
+    "objectID": "slides/3_collaboration.html#visual-clone-diagram",
+    "href": "slides/3_collaboration.html#visual-clone-diagram",
+    "title": "Collaboration Workflows",
+    "section": "Visual Clone Diagram",
+    "text": "Visual Clone Diagram\nGitHub repository\n\n        ↓ clone\n\nYour computer\n\n        ↓\n\nLocal editable project"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#what-is-a-branch",
+    "href": "slides/3_collaboration.html#what-is-a-branch",
+    "title": "Collaboration Workflows",
+    "section": "What Is a Branch?",
+    "text": "What Is a Branch?\nBranches = safe experimentation\nA branch is:\na parallel version inside a repository used for development and testing isolated from the main workflow"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#branch-workflow-diagram",
+    "href": "slides/3_collaboration.html#branch-workflow-diagram",
+    "title": "Collaboration Workflows",
+    "section": "Branch Workflow Diagram",
+    "text": "Branch Workflow Diagram\nmain\n ├── fix-readme\n ├── occupancy-update\n └── new-figures\nEach branch can evolve independently."
+  },
+  {
+    "objectID": "slides/3_collaboration.html#why-branches-matter",
+    "href": "slides/3_collaboration.html#why-branches-matter",
+    "title": "Collaboration Workflows",
+    "section": "Why Branches Matter",
+    "text": "Why Branches Matter\nBranches are useful for:\n\nTesting new analyses\nTrying ideas safely\nCollaborative editing\nReviewing changes\nProtecting stable workflows"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#pull-requests",
+    "href": "slides/3_collaboration.html#pull-requests",
+    "title": "Collaboration Workflows",
+    "section": "Pull Requests",
+    "text": "Pull Requests\nA pull request means:\n\n“Please review my changes before merging them.”\n\nPRs support:\n\nReview\nDiscussion\nTransparency\nQuality control"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#pull-request-workflow",
+    "href": "slides/3_collaboration.html#pull-request-workflow",
+    "title": "Collaboration Workflows",
+    "section": "Pull Request Workflow",
+    "text": "Pull Request Workflow\nCreate issue\n      ↓\nCreate branch\n      ↓\nMake changes\n      ↓\nCommit changes\n      ↓\nOpen pull request\n      ↓\nReview + discussion\n      ↓\nMerge into main"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#forking-workflow-example",
+    "href": "slides/3_collaboration.html#forking-workflow-example",
+    "title": "Collaboration Workflows",
+    "section": "Forking Workflow Example",
+    "text": "Forking Workflow Example\nExample contribution workflow\nOriginal repository\n        ↓\nFork repository\n        ↓\nClone fork locally\n        ↓\nCreate branch\n        ↓\nMake changes\n        ↓\nPush branch\n        ↓\nOpen pull request"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#when-would-you-fork",
+    "href": "slides/3_collaboration.html#when-would-you-fork",
+    "title": "Collaboration Workflows",
+    "section": "When Would You Fork?",
+    "text": "When Would You Fork?\nForks are useful when:\n\ncontributing to external projects\ncollaborating across organisations\nteaching workflows\nexperimenting independently\ncontributing to open-source tools"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#common-fears",
+    "href": "slides/3_collaboration.html#common-fears",
+    "title": "Collaboration Workflows",
+    "section": "Common Fears",
+    "text": "Common Fears\n“This seems complicated”\nReality:\n\nMost workflows are small\nMistakes are common\nNobody learns Git perfectly immediately\n\nThe goal is reducing chaos, not perfection."
+  },
+  {
+    "objectID": "slides/3_collaboration.html#editing-directly-on-main",
+    "href": "slides/3_collaboration.html#editing-directly-on-main",
+    "title": "Collaboration Workflows",
+    "section": "Editing directly on main",
+    "text": "Editing directly on main\nProblem:\n\nunstable workflows\naccidental breakage\ndifficult recovery\n\nBetter:\n\nuse branches for changes"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#giant-commits",
+    "href": "slides/3_collaboration.html#giant-commits",
+    "title": "Collaboration Workflows",
+    "section": "Giant commits",
+    "text": "Giant commits\nBad:\nUpdate everything\nBetter:\nAdd occupancy model script"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#small-commits-are-easier-to",
+    "href": "slides/3_collaboration.html#small-commits-are-easier-to",
+    "title": "Collaboration Workflows",
+    "section": "Small commits are easier to:",
+    "text": "Small commits are easier to:\n\nunderstand\nreview\nreverse"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#documentation",
+    "href": "slides/3_collaboration.html#documentation",
+    "title": "Collaboration Workflows",
+    "section": "Documentation",
+    "text": "Documentation\nWithout documentation:\n\nonboarding becomes difficult\nworkflows become fragile\ncollaborators get lost\n\nREADME files matter."
+  },
+  {
+    "objectID": "slides/3_collaboration.html#project-knowledge-trapped-in-one-person",
+    "href": "slides/3_collaboration.html#project-knowledge-trapped-in-one-person",
+    "title": "Collaboration Workflows",
+    "section": "Project knowledge trapped in one person",
+    "text": "Project knowledge trapped in one person\nDanger signs:\n\n“Only Alex knows how this works”\nundocumented scripts\nunclear setup instructions\nmysterious folders\n\nGood workflows reduce dependency on individuals."
+  },
+  {
+    "objectID": "slides/3_collaboration.html#project-handover",
+    "href": "slides/3_collaboration.html#project-handover",
+    "title": "Collaboration Workflows",
+    "section": "Project Handover",
+    "text": "Project Handover\nProjects should survive turnover\n\nstudents graduate\nstaff change jobs\ncollaborations evolve\nprojects pause and restart"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#helpful-project-features",
+    "href": "slides/3_collaboration.html#helpful-project-features",
+    "title": "Collaboration Workflows",
+    "section": "Helpful project features",
+    "text": "Helpful project features\n\nREADME\nclear folder structure\nsetup instructions\nmetadata\nreproducible scripts\ndocumented decisions\nversion control history"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#hands-on-pair-exercise",
+    "href": "slides/3_collaboration.html#hands-on-pair-exercise",
+    "title": "Collaboration Workflows",
+    "section": "Hands-on Pair Exercise",
+    "text": "Hands-on Pair Exercise\nIn pairs:\n\nCreate an issue\nCreate a branch\nEdit README\nCommit changes\nOpen pull request\nReview and merge"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#merge-conflicts",
+    "href": "slides/3_collaboration.html#merge-conflicts",
+    "title": "Collaboration Workflows",
+    "section": "Merge Conflicts",
+    "text": "Merge Conflicts\nMerge conflicts happen\nConflict means:\nTwo changes affect the same lines."
+  },
+  {
+    "objectID": "slides/3_collaboration.html#important",
+    "href": "slides/3_collaboration.html#important",
+    "title": "Collaboration Workflows",
+    "section": "Important",
+    "text": "Important\nConflicts are:\n\nnormal\nsolvable\nnot catastrophic"
+  },
+  {
+    "objectID": "slides/3_collaboration.html#collaboration-is-infrastructure",
+    "href": "slides/3_collaboration.html#collaboration-is-infrastructure",
+    "title": "Collaboration Workflows",
+    "section": "Collaboration Is Infrastructure",
+    "text": "Collaboration Is Infrastructure\nGood workflows help:\n\nReduce stress\nReduce errors\nImprove continuity\nImprove transparency\nImprove collaboration\nImprove science"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#open-workflows-for-ecology-and-wildlife-research",
+    "href": "slides/1_github_without_fear.html#open-workflows-for-ecology-and-wildlife-research",
+    "title": "GitHub without fear",
+    "section": "Open workflows for ecology and wildlife research",
+    "text": "Open workflows for ecology and wildlife research\nTopics:\n\nRepositories\nCommits\nPush/pull\nREADME files\nVersion control basics"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#learning-goals",
+    "href": "slides/1_github_without_fear.html#learning-goals",
+    "title": "GitHub without fear",
+    "section": "Learning Goals",
+    "text": "Learning Goals\nBy the end of this session you should be able to:\n\nUnderstand what Git and GitHub are\nCreate and clone repositories\nMake commits confidently\nPush and pull changes"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#what-problem-does-git-solve",
+    "href": "slides/1_github_without_fear.html#what-problem-does-git-solve",
+    "title": "GitHub without fear",
+    "section": "What Problem Does Git Solve?",
+    "text": "What Problem Does Git Solve?\nA familiar workflow problem\nanalysis_final.R\nanalysis_final_v2.R\nanalysis_final_v2_REAL.R\nanalysis_final_USE_THIS_ONE.R"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#common-issues",
+    "href": "slides/1_github_without_fear.html#common-issues",
+    "title": "GitHub without fear",
+    "section": "Common issues",
+    "text": "Common issues\n\nFiles overwritten\nUnsure what changed\nDifficult collaboration\nNo backup history\nImpossible to undo mistakes safely"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#git-is-not-github",
+    "href": "slides/1_github_without_fear.html#git-is-not-github",
+    "title": "GitHub without fear",
+    "section": "Git is not GitHub",
+    "text": "Git is not GitHub\nGit\n\nVersion control system\nTracks changes to files\nWorks locally on your computer\n\nGitHub\n\nOnline hosting platform for Git repositories\nCollaboration and sharing\nBackup and project management"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#version-control",
+    "href": "slides/1_github_without_fear.html#version-control",
+    "title": "GitHub without fear",
+    "section": "Version control",
+    "text": "Version control\nGit keeps a history of changes:\n\nWhat changed\nWhen it changed\nWho changed it\nWhy it changed"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#benefits",
+    "href": "slides/1_github_without_fear.html#benefits",
+    "title": "GitHub without fear",
+    "section": "Benefits",
+    "text": "Benefits\n\nUndo mistakes\nTrack project history\nCollaborate safely\nExperiment without fear"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#why-github-matters-in-ecology",
+    "href": "slides/1_github_without_fear.html#why-github-matters-in-ecology",
+    "title": "GitHub without fear",
+    "section": "Why GitHub Matters in Ecology",
+    "text": "Why GitHub Matters in Ecology\nEcology is collaborative\nExamples:\n\nMulti-author papers\nMonitoring projects\nShared codebases\nLong-term projects\nStudent supervision\nEvidence synthesis workflows"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#what-is-a-repository",
+    "href": "slides/1_github_without_fear.html#what-is-a-repository",
+    "title": "GitHub without fear",
+    "section": "What Is a Repository?",
+    "text": "What Is a Repository?\nRepository = project folder + history\nA repository contains:\n\nCode\nData (although it shouldn’t)\nDocumentation\nFigures\nWorkflow history\n\nThink of it as:\nA project folder with memory."
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#commits",
+    "href": "slides/1_github_without_fear.html#commits",
+    "title": "GitHub without fear",
+    "section": "Commits",
+    "text": "Commits\nCommits are snapshots\nA commit records:\n\nWhat changed\nWhen it changed\nA short explanation"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#good-commit-messages",
+    "href": "slides/1_github_without_fear.html#good-commit-messages",
+    "title": "GitHub without fear",
+    "section": "Good commit messages",
+    "text": "Good commit messages\nAdd cleaning script for camera trap data\nFix species names in processed dataset"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#bad-commit-messages",
+    "href": "slides/1_github_without_fear.html#bad-commit-messages",
+    "title": "GitHub without fear",
+    "section": "Bad commit messages",
+    "text": "Bad commit messages\nstuff\nasdfgh"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#a-helpful-mental-model",
+    "href": "slides/1_github_without_fear.html#a-helpful-mental-model",
+    "title": "GitHub without fear",
+    "section": "A Helpful Mental Model",
+    "text": "A Helpful Mental Model\nEdit files\n    ↓\nReview changes\n    ↓\nCommit changes\n    ↓\nPush to GitHub"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#push-and-pull",
+    "href": "slides/1_github_without_fear.html#push-and-pull",
+    "title": "GitHub without fear",
+    "section": "Push and Pull",
+    "text": "Push and Pull\nPush\nSend your local commits to GitHub.\nPull\nDownload changes from GitHub."
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#typical-workflow",
+    "href": "slides/1_github_without_fear.html#typical-workflow",
+    "title": "GitHub without fear",
+    "section": "Typical workflow",
+    "text": "Typical workflow\nPull\nWork\nCommit\nPush"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#github-is-useful-for",
+    "href": "slides/1_github_without_fear.html#github-is-useful-for",
+    "title": "GitHub without fear",
+    "section": "GitHub is useful for:",
+    "text": "GitHub is useful for:\n\nBackup\nProject sharing\nCollaboration (even with youself)\nPublic documentation\nTeaching\nOpen science portfolios"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#common-fear-1",
+    "href": "slides/1_github_without_fear.html#common-fear-1",
+    "title": "GitHub without fear",
+    "section": "Common Fear #1",
+    "text": "Common Fear #1\n“What if I break everything?”\nGood news:\nGit is designed to:\n\nTrack changes\nRecover mistakes\nRestore earlier versions"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#mistakes-are-normal.",
+    "href": "slides/1_github_without_fear.html#mistakes-are-normal.",
+    "title": "GitHub without fear",
+    "section": "Mistakes are normal.",
+    "text": "Mistakes are normal.\nEven experienced users regularly:\n\nCommit the wrong file\nMerge incorrectly\nForget to pull"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#common-fear-2",
+    "href": "slides/1_github_without_fear.html#common-fear-2",
+    "title": "GitHub without fear",
+    "section": "Common Fear #2",
+    "text": "Common Fear #2\n“I don’t understand branches”\nThat is okay.\nBranches come later…\nYou do not need to master Git immediately."
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#common-fear-3",
+    "href": "slides/1_github_without_fear.html#common-fear-3",
+    "title": "GitHub without fear",
+    "section": "Common Fear #3",
+    "text": "Common Fear #3\n“The terminal is scary”\nYes it is! You can do a lot using:\n\nRStudio Git pane\nGitHub Desktop\nVS Code interfaces\n\nUnderstanding concepts matters more than memorising commands."
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#common-mistakes",
+    "href": "slides/1_github_without_fear.html#common-mistakes",
+    "title": "GitHub without fear",
+    "section": "Common Mistakes",
+    "text": "Common Mistakes\nCommon “beginner” mistakes\n\nForgetting to commit\nCommitting large files\nEditing directly on GitHub accidentally\nConflicts after forgetting to pull\nUploading sensitive data"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#guided-practice",
+    "href": "slides/1_github_without_fear.html#guided-practice",
+    "title": "GitHub without fear",
+    "section": "Guided practice",
+    "text": "Guided practice\nYou will:\n\nCreate a GitHub repository\nConnect it to RStudio\nAdd your reproducible project\nCommit changes\nPush to GitHub\nEdit README\nPull updates"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#create-a-github-repository",
+    "href": "slides/1_github_without_fear.html#create-a-github-repository",
+    "title": "GitHub without fear",
+    "section": "Create a GitHub repository",
+    "text": "Create a GitHub repository\nOn GitHub:\n\nClick “New repository”\nChoose a repository name\nAdd a README\nSet visibility\nCreate repository\n\nSuggested name:\nwildlife-reproducibility-workshop"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#clone-repository-into-rstudio",
+    "href": "slides/1_github_without_fear.html#clone-repository-into-rstudio",
+    "title": "GitHub without fear",
+    "section": "“Clone” repository into RStudio",
+    "text": "“Clone” repository into RStudio\nIn RStudio:\nFile → New Project → Version Control → Git\nPaste repository URL."
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#result",
+    "href": "slides/1_github_without_fear.html#result",
+    "title": "GitHub without fear",
+    "section": "Result",
+    "text": "Result\nYou now have:\n\nLocal repository\nGit tracking enabled\nGitHub connection established"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#add-project-files",
+    "href": "slides/1_github_without_fear.html#add-project-files",
+    "title": "GitHub without fear",
+    "section": "Add project files",
+    "text": "Add project files\nCopy into the repository:\n\ndata_raw/\nscripts/\noutputs/\nREADME.md"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#observe-git-pane",
+    "href": "slides/1_github_without_fear.html#observe-git-pane",
+    "title": "GitHub without fear",
+    "section": "Observe Git pane",
+    "text": "Observe Git pane\nRStudio now shows changed files."
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#make-your-first-commit",
+    "href": "slides/1_github_without_fear.html#make-your-first-commit",
+    "title": "GitHub without fear",
+    "section": "Make your first commit",
+    "text": "Make your first commit\nIn Git pane:\n\nTick changed files\nClick “Commit”\nWrite message\n\nExample:\nAdd initial project structure and scripts"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#push-to-github",
+    "href": "slides/1_github_without_fear.html#push-to-github",
+    "title": "GitHub without fear",
+    "section": "Push to GitHub",
+    "text": "Push to GitHub\nClick:\nPush"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#refresh-github-page",
+    "href": "slides/1_github_without_fear.html#refresh-github-page",
+    "title": "GitHub without fear",
+    "section": "Refresh GitHub page",
+    "text": "Refresh GitHub page\nYour project is now online."
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#edit-the-readme",
+    "href": "slides/1_github_without_fear.html#edit-the-readme",
+    "title": "GitHub without fear",
+    "section": "Edit the README",
+    "text": "Edit the README\nAdd:\n\nProject description\nYour name\nWorkshop details\nFolder explanation\n\nCommit and push changes."
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#important-habits",
+    "href": "slides/1_github_without_fear.html#important-habits",
+    "title": "GitHub without fear",
+    "section": "Important habits",
+    "text": "Important habits\n\nAlways pull before starting work.\nCommit often"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#be-careful-with",
+    "href": "slides/1_github_without_fear.html#be-careful-with",
+    "title": "GitHub without fear",
+    "section": "Be careful with:",
+    "text": "Be careful with:\n\nSensitive species locations\nConfidential data\nPersonal information\nLarge raw files\nPasswords/API keys"
+  },
+  {
+    "objectID": "slides/1_github_without_fear.html#useful-links",
+    "href": "slides/1_github_without_fear.html#useful-links",
+    "title": "GitHub without fear",
+    "section": "Useful Links",
+    "text": "Useful Links\n\nHappy Git with R\nSoftware Carpentry Git lesson\nOh Shit, Git!?!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GitHub and Quarto for open and reproducible research",
+    "section": "",
+    "text": "# GitHub and Quarto workshop\nMaterials for the Umeå workshop on GitHub, Quarto and collaborative research workflows."
+  },
+  {
+    "objectID": "index.html#slides",
+    "href": "index.html#slides",
+    "title": "GitHub and Quarto for open and reproducible research",
+    "section": "Slides",
+    "text": "Slides\n\nGitHub without fear\nQuarto for transparent reporting\nCollaboration workflows"
+  },
+  {
+    "objectID": "index.html#exercise",
+    "href": "index.html#exercise",
+    "title": "GitHub and Quarto for open and reproducible research",
+    "section": "Exercise",
+    "text": "Exercise\nDownload or open the Quarto wildlife report template."
+  },
+  {
+    "objectID": "index.html#repository",
+    "href": "index.html#repository",
+    "title": "GitHub and Quarto for open and reproducible research",
+    "section": "Repository",
+    "text": "Repository\nThe source materials are available in the\nUmea_GitHub GitHub repository."
+  },
+  {
+    "objectID": "slides/2_quarto_reports.html#the-problem",
+    "href": "slides/2_quarto_reports.html#the-problem",
+    "title": "Quarto for Transparent Reporting",
+    "section": "The Problem",
+    "text": "The Problem\nRun analysis \n↓ \nCopy figure manually \n↓ \nPaste into Word \n↓ \nChange analysis \n↓ \nForget to update figure"
+  },
+  {
+    "objectID": "slides/2_quarto_reports.html#what-quarto-does",
+    "href": "slides/2_quarto_reports.html#what-quarto-does",
+    "title": "Quarto for Transparent Reporting",
+    "section": "What Quarto Does",
+    "text": "What Quarto Does\nQuarto combines:\n\nNarrative text\nR code\nFigures\nTables\n\nInto one reproducible document."
+  },
+  {
+    "objectID": "slides/2_quarto_reports.html#a-simple-workflow",
+    "href": "slides/2_quarto_reports.html#a-simple-workflow",
+    "title": "Quarto for Transparent Reporting",
+    "section": "A Simple Workflow",
+    "text": "A Simple Workflow\nData \n↓ \nScripts \n↓ \nQuarto document \n↓ \nHTML / PDF / Word / slides"
+  },
+  {
+    "objectID": "slides/2_quarto_reports.html#what-are-parameters",
+    "href": "slides/2_quarto_reports.html#what-are-parameters",
+    "title": "Quarto for Transparent Reporting",
+    "section": "What Are Parameters?",
+    "text": "What Are Parameters?\nParameterised reports\nOne report template can generate:\n\nmultiple species reports\nmultiple site reports\nmultiple years\nmultiple regions\n\nAutomatically."
+  }
+]
