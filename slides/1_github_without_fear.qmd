@@ -31,12 +31,8 @@ Topics:
 
 *A familiar workflow problem*
 
-``` text
-analysis_final.R
-analysis_final_v2.R
-analysis_final_v2_REAL.R
-analysis_final_USE_THIS_ONE.R
-```
+![](images/phd-not-final.gif){fig-alt="PHD Comics strip showing many successive versions of a document with increasingly elaborate final filenames." fig-align="center" width="75%"}
+
 
 ## Common issues
 
