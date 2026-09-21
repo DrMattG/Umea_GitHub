@@ -89,7 +89,7 @@ You use clone when you want to:
 - edit files locally
 - connect GitHub to RStudio
 
-Example https://github.com/DrMattG/Open_wildlife_workshop.git
+Example https://github.com/DrMattG/Umea_GitHub
 
 Now the project exists on your computer.
 

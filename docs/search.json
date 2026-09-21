@@ -46,7 +46,7 @@
     "href": "slides/3_collaboration.html#cloning-a-repository",
     "title": "Collaboration Workflows",
     "section": "Cloning a Repository",
-    "text": "Cloning a Repository\nClone = download repository locally\nYou use clone when you want to:\n\nwork on a project\nrun analyses\nedit files locally\nconnect GitHub to RStudio\n\nExample https://github.com/DrMattG/Open_wildlife_workshop.git\nNow the project exists on your computer."
+    "text": "Cloning a Repository\nClone = download repository locally\nYou use clone when you want to:\n\nwork on a project\nrun analyses\nedit files locally\nconnect GitHub to RStudio\n\nExample https://github.com/DrMattG/Umea_GitHub\nNow the project exists on your computer."
   },
   {
     "objectID": "slides/3_collaboration.html#visual-clone-diagram",
